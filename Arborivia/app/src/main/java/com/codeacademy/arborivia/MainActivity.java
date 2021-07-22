@@ -23,12 +23,22 @@ public class MainActivity extends AppCompatActivity {
     // Add ArrayList member variable
     ArrayList<Question> questions;
 
-    // TODO 3-A: Declare View member variables
+    // Declaring View member variables
+
+    ImageView questionImageView;
+    TextView questionTextView;
+    TextView questionsRemainingTextView;
+    Button answer0Button;
+    Button answer1Button;
+    Button answer2Button;
+    Button answer3Button;
+    Button submitButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // TODO 2-G: Show app icon in ActionBar
+        // App icon in ActionBar
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.drawable.ic_unquote_icon);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
@@ -36,7 +46,16 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        // TODO 3-B: assign View member variables
+        // Assigning view member variables
+        questionImageView = findViewById(R.id.iv_main_question_image);
+        questionTextView = findViewById(R.id.tv_main_question_title);
+        questionsRemainingTextView = findViewById(R.id.tv_main_questions_remaining_count);
+        answer0Button = findViewById(R.id.btn_main_answer_0);
+        answer1Button = findViewById(R.id.btn_main_answer_1);
+        answer2Button = findViewById(R.id.btn_main_answer_2);
+        answer3Button = findViewById(R.id.btn_main_answer_3);
+        submitButton = findViewById(R.id.btn_main_submit_answer);
+
 
         // TODO 4-E: set onClickListener for each answer Button
 
@@ -48,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
     // TODO 3-F: displayQuestion(Question question) {...}
 
     // TODO 3-C: displayQuestionsRemaining(int questionRemaining) {...}
+
+    public void displayQuestionsRemaining(int remainingQuestions){
+        questionsRemainingTextView.setText(remainingQuestions);
+    }
 
     // TODO 4-A: onAnswerSelected(int answerSelected) {...}
 
@@ -70,8 +93,7 @@ public class MainActivity extends AppCompatActivity {
         totalCorrect = 0;
         totalQuestions = questions.size();
         Question firstQuestion = chooseNewQuestion();
-        // TODO 3-D.ii: Uncomment the line below after implementing displayQuestionsRemaining(int)
-        // displayQuestionsRemaining(questions.size());
+        displayQuestionsRemaining(questions.size());
 
         // TODO 3-H.ii: Uncomment after implementing displayQuestion(Question)
         // displayQuestion(firstQuestion);
@@ -95,8 +117,7 @@ public class MainActivity extends AppCompatActivity {
             totalCorrect ++;
         }
         questions.remove(currentQuestion);
-        // TODO 3-D.i: Uncomment the line below after implementing displayQuestionsRemaining(int)
-        // displayQuestionsRemaining(questions.size());
+        displayQuestionsRemaining(questions.size());
 
         if (questions.size() == 0) {
             String gameOverMan = getGameOverMessage(totalCorrect, totalQuestions);
