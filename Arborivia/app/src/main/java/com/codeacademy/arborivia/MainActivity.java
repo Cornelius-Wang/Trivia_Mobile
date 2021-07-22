@@ -57,23 +57,81 @@ public class MainActivity extends AppCompatActivity {
         submitButton = findViewById(R.id.btn_main_submit_answer);
 
 
-        // TODO 4-E: set onClickListener for each answer Button
+        // Setting onClickListener for each answer Button
+
+        answer0Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onAnswerSelected(0);
+            }
+        });
+
+        answer1Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onAnswerSelected(1);
+            }
+        });
+        answer2Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onAnswerSelected(2);
+            }
+        });
+        answer3Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onAnswerSelected(3);
+            }
+        });
 
         // TODO 5-A: set onClickListener for the submit answer Button
+
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onAnswerSubmission();
+            }
+        });
 
         startNewGame();
     }
 
-    // TODO 3-F: displayQuestion(Question question) {...}
-
-    // TODO 3-C: displayQuestionsRemaining(int questionRemaining) {...}
-
-    public void displayQuestionsRemaining(int remainingQuestions){
-        questionsRemainingTextView.setText(remainingQuestions);
+    public void displayQuestion(Question question) {
+        questionImageView.setImageResource(question.imageId);
+        questionTextView.setText(question.questionText);
+        answer0Button.setText(question.answer0);
+        answer1Button.setText(question.answer1);
+        answer2Button.setText(question.answer2);
+        answer3Button.setText(question.answer3);
     }
 
-    // TODO 4-A: onAnswerSelected(int answerSelected) {...}
+    public void displayQuestionsRemaining(int remainingQuestions){
+        questionsRemainingTextView.setText(remainingQuestions + "");
+    }
 
+    public void onAnswerSelected(int answerSelected) {
+        Question currentQuestion = getCurrentQuestion();
+        currentQuestion.playerAnswer = answerSelected;
+        answer0Button.setText(currentQuestion.answer0);
+        answer1Button.setText(currentQuestion.answer1);
+        answer2Button.setText(currentQuestion.answer2);
+        answer3Button.setText(currentQuestion.answer3);
+        switch (answerSelected) {
+            case 0:
+                answer0Button.setText("✔" + currentQuestion.answer0);
+                break;
+            case 1:
+                answer1Button.setText("✔" + currentQuestion.answer1);
+                break;
+            case 2:
+                answer2Button.setText("✔" + currentQuestion.answer2);
+                break;
+            case 3:
+                answer3Button.setText("✔" + currentQuestion.answer3);
+                break;
+        }
+    }
 
     // Method to be called when starting a new game
     public void startNewGame() {
@@ -94,9 +152,7 @@ public class MainActivity extends AppCompatActivity {
         totalQuestions = questions.size();
         Question firstQuestion = chooseNewQuestion();
         displayQuestionsRemaining(questions.size());
-
-        // TODO 3-H.ii: Uncomment after implementing displayQuestion(Question)
-        // displayQuestion(firstQuestion);
+        displayQuestion(firstQuestion);
     }
 
     // Method of randomly choosing questions from the ArrayList in startNewGame()
@@ -128,8 +184,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             chooseNewQuestion();
         }
-        // TODO: uncomment after implementing displayQuestion()
-        // displayQuestion(getCurrentQuestion());
+        displayQuestion(getCurrentQuestion());
     }
 
     public int generateRandomNumber(int max) {
