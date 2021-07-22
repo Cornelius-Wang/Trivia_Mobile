@@ -1657,6 +1657,13 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_unquote_icon
+drawable img_quote_0
+drawable img_quote_1
+drawable img_quote_2
+drawable img_quote_3
+drawable img_quote_4
+drawable img_quote_5
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp

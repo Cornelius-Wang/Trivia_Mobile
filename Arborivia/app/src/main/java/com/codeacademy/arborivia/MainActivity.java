@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 import java.util.ArrayList;
 
-public class MainActivity {
+public class MainActivity extends AppCompatActivity {
 
     // Initializing global variables
     int currentQuestionIndex = 0;
@@ -24,12 +24,15 @@ public class MainActivity {
     ArrayList<Question> questions;
 
     // TODO 3-A: Declare View member variables
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // TODO 2-G: Show app icon in ActionBar
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.ic_unquote_icon);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+        getSupportActionBar().setElevation(0);
 
         setContentView(R.layout.activity_main);
 
@@ -51,13 +54,19 @@ public class MainActivity {
 
     // Method to be called when starting a new game
     public void startNewGame() {
-        Question question1 = new Question(1, "Which American Task Force(s) took part in the Battle of Midway?", "Task Force 6", "Task Forces 1 & 3", "Task Force 33", "Task Forces 16 & 17", 3);
-        Question question2 = new Question(2, "What was the name of the Japanese Fleet in the Battle of Midway?", "Kantai Kessen", "Kido Butai", "Kawasaki Kombu", "Kageyama's Crescent'", 1);
-        Question question3 = new Question(3, "Who won the Battle of Midway", "The Americans", "The Japanese", "Draw", "The Chinese", 0);
+        Question question1 = new Question( R.drawable.img_quote_0, "Pretty good advice, and perhaps a scientist did say it… Who actually did?", "Albert Einstein", "Isaac Newton", "Rita Mae Brown", "Rosalind Franklin", 2);
+        Question question2 = new Question(R.drawable.img_quote_1, "Was honest Abe honestly quoted? Who authored this pithy bit of wisdom?", "Edward Stieglitz", "Maya Angelou", "Abraham Lincoln", "Ralph Waldo Emerson", 0);
+        Question question3 = new Question(R.drawable.img_quote_2, "Easy advice to read, difficult advice to follow — who actually said it?", "Martin Luther King Jr", "Mother Teresa", "Fred Rogers", "Oprah Winfrey", 1);
+        Question question4 = new Question(R.drawable.img_quote_3, "Insanely inspiring, insanely incorrect(maybe). Who is the true source of this inspiration?", "Nelson Mandela", "Harriet Tubman", "Mahatma Gandhi", "Nicholas Klein", 3);
+        Question question5 = new Question(R.drawable.img_quote_4, "A peace worth striving for — who actually reminded us of this?", "Malala Yousafzai", "Martin Luther King Jr.", "Liu Xiaobo", "Dalai Lama", 3);
+        Question question6 = new Question(R.drawable.img_quote_5, "Unfortunately, true — but did Marilyn Monroe convey it or did someone else?", "Laurel Thatcher Ulrich", "Eleanor Roosevelt", "Mahatma Gandhi", "Queen Victoria", 0);
         questions = new ArrayList<>();
         questions.add(question1);
         questions.add(question2);
         questions.add(question3);
+        questions.add(question4);
+        questions.add(question5);
+        questions.add(question6);
         totalCorrect = 0;
         totalQuestions = questions.size();
         Question firstQuestion = chooseNewQuestion();
