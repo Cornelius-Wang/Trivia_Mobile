@@ -1660,10 +1660,17 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_unquote_icon
 drawable img_quote_0
 drawable img_quote_1
+drawable img_quote_10
+drawable img_quote_11
+drawable img_quote_12
 drawable img_quote_2
 drawable img_quote_3
 drawable img_quote_4
 drawable img_quote_5
+drawable img_quote_6
+drawable img_quote_7
+drawable img_quote_8
+drawable img_quote_9
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp

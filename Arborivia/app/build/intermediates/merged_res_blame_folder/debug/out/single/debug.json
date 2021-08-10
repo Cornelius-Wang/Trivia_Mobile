@@ -8,12 +8,20 @@
         "source": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
     },
     {
+        "merged": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_img_quote_8.png.flat",
+        "source": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\src\\main\\res\\drawable\\img_quote_8.png"
+    },
+    {
         "merged": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_img_quote_6.png.flat",
+        "source": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\src\\main\\res\\drawable\\img_quote_6.png"
     },
     {
         "merged": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
@@ -30,6 +38,14 @@
     {
         "merged": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_unquote_icon.png.flat",
         "source": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_unquote_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_img_quote_10.png.flat",
+        "source": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\src\\main\\res\\drawable\\img_quote_10.png"
+    },
+    {
+        "merged": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_img_quote_11.png.flat",
+        "source": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\src\\main\\res\\drawable\\img_quote_11.png"
     },
     {
         "merged": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_unquote_icon.xml.flat",
@@ -80,6 +96,10 @@
         "source": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_unquote_icon.png"
     },
     {
+        "merged": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_img_quote_9.png.flat",
+        "source": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\src\\main\\res\\drawable\\img_quote_9.png"
+    },
+    {
         "merged": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_img_quote_0.png.flat",
         "source": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\src\\main\\res\\drawable\\img_quote_0.png"
     },
@@ -126,6 +146,14 @@
     {
         "merged": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_img_quote_12.png.flat",
+        "source": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\src\\main\\res\\drawable\\img_quote_12.png"
+    },
+    {
+        "merged": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_img_quote_7.png.flat",
+        "source": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\src\\main\\res\\drawable\\img_quote_7.png"
     },
     {
         "merged": "C:\\Users\\Cory\\AndroidStudioProjects\\Trivia_Mobile\\Arborivia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_unquote_icon.png.flat",
