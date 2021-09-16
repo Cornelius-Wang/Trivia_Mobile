@@ -10,11 +10,16 @@ Summary: Simple quiz game using quotes from famous people.
 Screenshots
 
 Initial app
-![Initial Screen](/images/accio-screenshot-1.PNG?raw=true "Initial view of app")
+![Initial Screen](/Arborivia/app/src/main/res/Screencap_Initial.png "Initial view of app")
 
 <br>
 
-Listings and city data loaded
-![Loaded Screen](/images/accio-screenshot-2.PNG?raw=true "App with listings and city data")
+Main Activity
+![Loaded Screen](/Arborivia/app/src/main/res/Screencap_During.png "Multiple choice selection")
+
+<br>
+
+Game Over Man
+![Finale Screen](/Arborivia/app/src/main/res/Screencap_Finish.png "Game over message")
 
 Technology Used: Java
