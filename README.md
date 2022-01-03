@@ -1,6 +1,6 @@
 
 ---
-# Trivia_Mobile
+# Trivia Mobile
 Description: Java based trivia game for Android OS
 
 Author: Cory Wang
