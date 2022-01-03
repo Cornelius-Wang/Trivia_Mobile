@@ -2,7 +2,9 @@
 ---
 # Trivia_Mobile
 Description: Java based trivia game for Android OS
+
 Author: Cory Wang
+
 Summary: Simple quiz game using quotes from famous people.
 
 ---
